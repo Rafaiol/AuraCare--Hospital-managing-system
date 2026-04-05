@@ -42,7 +42,11 @@ app.use(helmet({
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : ['http://localhost:5173', 'https://aura-care-topaz.vercel.app'],
+  // Dynamically allow all Origins if no specific CORS_ORIGIN is set 
+  // (solves the issue of Vercel generating random preview domains like 'https://aura-care-86o0xbcwy...vercel.app')
+  origin: process.env.CORS_ORIGIN 
+    ? process.env.CORS_ORIGIN.split(',') 
+    : function(origin, callback) { callback(null, true); },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
