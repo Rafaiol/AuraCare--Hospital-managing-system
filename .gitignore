@@ -15,3 +15,7 @@ coverage/
 *_out.txt
 npm_out.txt
 backend_lint_out.json
+
+# Internal tool/skill folders - not part of the project
+hospital-management-system/awesome-claude-skills/
+hospital-management-system/superpowers/
