@@ -1,0 +1,145 @@
+﻿
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\common\DataTable.tsx
+  55:17  warning  Compilation Skipped: Use of incompatible library
+
+This API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\common\DataTable.tsx:55:17
+  53 |   const [globalFilter, setGlobalFilter] = useState('');
+  54 |
+> 55 |   const table = useReactTable({
+     |                 ^^^^^^^^^^^^^ TanStack Table's `useReactTable()` API returns functions that cannot be memoized safely
+  56 |     data,
+  57 |     columns,
+  58 |     getCoreRowModel: getCoreRowModel(),  react-hooks/incompatible-library
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\common\EditPageTemplate.tsx
+  15:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  16:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  33:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  37:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:14  error  'error' is defined but never used         @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\ui\badge.tsx
+  2:1  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/purity')
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\ui\button-group.tsx
+  2:1  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/purity')
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\ui\button.tsx
+  2:1  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/purity')
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\ui\form.tsx
+  2:1  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/purity')
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\ui\navigation-menu.tsx
+  2:1  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/purity')
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\components\ui\toggle.tsx
+  2:1  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/purity')
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\hooks\useAuth.ts
+  23:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  54:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  79:14  error  '_error' is defined but never used        @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\AddDoctor.tsx
+  5:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\AddPatient.tsx
+  5:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\AppointmentDetails.tsx
+  34:6   warning  React Hook useEffect has a missing dependency: 'fetchAppointment'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  41:14  error    'error' is defined but never used                                                                                    @typescript-eslint/no-unused-vars
+  54:14  error    'error' is defined but never used                                                                                    @typescript-eslint/no-unused-vars
+  65:14  error    'error' is defined but never used                                                                                    @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\AppointmentForm.tsx
+   44:6   warning  React Hook useEffect has a missing dependency: 'fetchInitialData'. Either include it or remove the dependency array     react-hooks/exhaustive-deps
+   50:6   warning  React Hook useEffect has a missing dependency: 'fetchAvailableSlots'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+   74:14  error    'error' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+   85:14  error    'error' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+  117:14  error    'error' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\Appointments.tsx
+  53:14  error  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+  68:14  error  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+  78:14  error  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\Billing.tsx
+  54:14  error  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\Dashboard.tsx
+  79:14  error  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\DoctorDetails.tsx
+  38:16  error  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\Doctors.tsx
+  48:14  error  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\EditDoctor.tsx
+  20:16  error  'error' is defined but never used         @typescript-eslint/no-unused-vars
+  29:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\EditPatient.tsx
+  20:16  error  'error' is defined but never used         @typescript-eslint/no-unused-vars
+  29:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\PatientDetails.tsx
+  35:16  error  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\Patients.tsx
+  48:14  error  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\Reports.tsx
+  54:10  error  '_dateRange' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  54:22  error  '_setDateRange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\pages\Rooms.tsx
+  37:48  error    Unexpected any. Specify a different type                                                                       @typescript-eslint/no-explicit-any
+  42:6   warning  React Hook useEffect has a missing dependency: 'fetchRooms'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  53:14  error    'error' is defined but never used                                                                              @typescript-eslint/no-unused-vars
+  64:14  error    'error' is defined but never used                                                                              @typescript-eslint/no-unused-vars
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\services\appointmentService.ts
+  24:107  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  63:96   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  64:48   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  70:94   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  71:48   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\services\billingService.ts
+  37:91   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  65:152  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  75:90   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  76:48   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\services\doctorService.ts
+  34:87  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  67:83  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  68:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  77:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  78:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\services\patientService.ts
+  43:91  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  71:84  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  72:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  89:89  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  90:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\services\roomService.ts
+  24:79   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  52:152  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  74:40   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  75:48   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Anis\Documents\Web Pages\Hospital Manager\app\src\store\slices\uiSlice.ts
+  16:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  66:69  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 70 problems (59 errors, 11 warnings)
+  0 errors and 6 warnings potentially fixable with the `--fix` option.
+

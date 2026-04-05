@@ -1,0 +1,50 @@
+Creating sequences...
+Initializing PostgreSQL connection pool...
+PostgreSQL connection pool initialized successfully
+Query execution error: error: password authentication failed for user "postgres"
+    at C:\Users\Anis\Documents\Web Pages\Hospital Manager\hospital-management-system\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async executeQuery (C:\Users\Anis\Documents\Web Pages\Hospital Manager\hospital-management-system\backend\config\database.js:75:20)
+    at async createSequences (C:\Users\Anis\Documents\Web Pages\Hospital Manager\hospital-management-system\backend\create-seq.js:6:5) {
+  length: 104,
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '320',
+  routine: 'auth_failed'
+}
+Failed to create sequences: error: password authentication failed for user "postgres"
+    at C:\Users\Anis\Documents\Web Pages\Hospital Manager\hospital-management-system\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async executeQuery (C:\Users\Anis\Documents\Web Pages\Hospital Manager\hospital-management-system\backend\config\database.js:75:20)
+    at async createSequences (C:\Users\Anis\Documents\Web Pages\Hospital Manager\hospital-management-system\backend\create-seq.js:6:5) {
+  length: 104,
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '320',
+  routine: 'auth_failed'
+}
+PostgreSQL connection pool closed

@@ -1,0 +1,87 @@
+.rbc-calendar {
+    @apply font-sans;
+    min-height: 600px;
+    height: 100%;
+  }
+
+  .rbc-btn-group > button {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2;
+  }
+  .rbc-btn-group > button.rbc-active {
+    @apply bg-accent text-accent-foreground;
+  }
+  .rbc-btn-group > button:first-child:not(:last-child) {
+    @apply rounded-r-none border-r-0;
+  }
+  .rbc-btn-group > button:last-child:not(:first-child) {
+    @apply rounded-l-none;
+  }
+  .rbc-btn-group > button:not(:first-child):not(:last-child) {
+    @apply rounded-none border-r-0;
+  }
+
+  .rbc-toolbar {
+    @apply mb-4 flex-wrap gap-4 items-center justify-between;
+  }
+  .rbc-toolbar-label {
+    @apply font-bold text-xl text-foreground !important;
+  }
+  .rbc-header {
+    @apply py-2 font-semibold text-sm border-b border-border text-muted-foreground !important;
+  }
+
+  .rbc-month-view, .rbc-time-view {
+    @apply border-border rounded-lg overflow-hidden bg-background !important;
+  }
+  
+  .rbc-month-row, .rbc-day-bg, .rbc-time-header-content {
+    @apply border-border !important;
+  }
+
+  .rbc-off-range-bg {
+    @apply bg-muted/30 !important;
+  }
+  
+  .rbc-today {
+    @apply bg-teal-50/50 dark:bg-teal-900/20 !important;
+  }
+
+  .rbc-event {
+    @apply bg-teal-500 hover:bg-teal-600 text-white rounded outline-none px-2 py-1 text-xs border-none shadow-sm transition-colors !important;
+  }
+  .rbc-event-label {
+    @apply hidden;
+  }
+  .rbc-event-content {
+    @apply truncate font-medium;
+  }
+
+  .rbc-date-cell {
+    @apply pr-2 pt-1 font-medium text-sm text-foreground !important;
+  }
+  .rbc-off-range {
+    @apply text-muted-foreground opacity-50 !important;
+  }
+
+  /* Time Grid */
+  .rbc-time-content, .rbc-time-header {
+    @apply border-border !important;
+  }
+  .rbc-timeslot-group {
+    @apply border-border !important;
+  }
+  .rbc-time-gutter .rbc-timeslot-group {
+    @apply border-border bg-muted/10 !important;
+  }
+  .rbc-time-slot {
+    @apply border-border !important;
+  }
+  .rbc-label {
+    @apply text-muted-foreground text-xs px-2 !important;
+  }
+  .rbc-allday-cell {
+    @apply border-border !important;
+  }
+  .rbc-current-time-indicator {
+    @apply bg-teal-500 !important;
+  }
