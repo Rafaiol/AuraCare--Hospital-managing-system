@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Calendar,
@@ -8,7 +8,6 @@ import {
   Users,
   Plus,
   FileText,
-  Building2,
   LayoutDashboard,
   Stethoscope,
   LogOut,
@@ -16,8 +15,7 @@ import {
   Sun,
   Bed,
   Search,
-  Command as CommandIcon,
-  ChevronRight
+  Command as CommandIcon
 } from 'lucide-react';
 import {
   CommandDialog,
@@ -32,12 +30,12 @@ import { useAuth } from '@/hooks/useAuth';
 import { useDispatch, useSelector } from 'react-redux';
 import { type RootState, type AppDispatch } from '@/store';
 import { toggleDarkMode } from '@/store/slices/uiSlice';
-import { cn } from '@/lib/utils';
+
 
 export function CommandMenu() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-  const { logout, user } = useAuth();
+  const { logout } = useAuth();
   const dispatch = useDispatch<AppDispatch>();
   const darkMode = useSelector((state: RootState) => state.ui.darkMode);
 

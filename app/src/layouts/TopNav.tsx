@@ -14,12 +14,9 @@ import {
   User,
   LogOut,
   Settings,
-  ChevronDown,
   X,
   UserRound,
   Stethoscope,
-  CalendarDays,
-  FileText,
   AlertCircle,
   Clock,
   CheckCircle2,
@@ -35,12 +32,10 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
 
 // Services
 import { patientService } from '@/services/patientService';
 import { doctorService } from '@/services/doctorService';
-import { appointmentService } from '@/services/appointmentService';
 import { notificationService, type Notification } from '@/services/notificationService';
 
 const TopNav = () => {
