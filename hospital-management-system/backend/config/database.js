@@ -22,6 +22,14 @@ const dbConfig = {
   connectionTimeoutMillis: 2000,
 };
 
+if (process.env.DATABASE_URL) {
+  dbConfig.connectionString = process.env.DATABASE_URL;
+  // Render requires SSL for external connections
+  dbConfig.ssl = {
+    rejectUnauthorized: false
+  };
+}
+
 // Connection pool instance
 let connectionPool = null;
 
